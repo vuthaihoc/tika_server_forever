@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<properties>
+    <parsers>
+        <parser class="org.apache.tika.parser.pdf.PDFParser"/>
+        <parser class="org.apache.tika.parser.odf.OpenDocumentParser"/>
+        <parser class="org.apache.tika.parser.odf.OpenDocumentContentParser"/>
+        <parser class="org.apache.tika.parser.odf.OpenDocumentMetaParser"/>
+        <parser class="org.apache.tika.parser.opendocument.OpenOfficeParser"/>
+        <parser class="org.apache.tika.parser.microsoft.ooxml.OOXMLParser"/>
+        <parser class="org.apache.tika.parser.microsoft.OfficeParser"/>
+        <parser class="org.apache.tika.parser.microsoft.OldExcelParser"/>
+        <parser class="org.apache.tika.parser.rtf.RTFParser"/>
+        <parser class="org.apache.tika.parser.xml.XMLParser"/>
+        <parser class="org.apache.tika.parser.epub.EpubParser"/>
+        <parser class="org.apache.tika.parser.epub.EpubContentParser"/>
+        <parser class="org.apache.tika.parser.chm.ChmParser"/>
+    </parsers>
+    <detectors>
+        <detector class="org.apache.tika.mime.MagicDetector"/>
+    </detectors>
+</properties>

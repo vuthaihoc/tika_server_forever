@@ -1,0 +1,18 @@
+apps:
+  - script   : /usr/bin/java
+    name     : 'tika_server'
+    interpreter: none
+    cwd: ./
+    exec_mode: fork
+    args : -jar ./tika-server.jar -c ./tika_config.xml
+    autorestart : true
+    restart_delay : 500
+    log_date_format : YYYY-MM-DD HH:mm Z
+  - script   : check_tika_health.sh
+    name     : 'tika_server_check_health'
+    interpreter: /bin/bash
+    cwd: ./
+    exec_mode: fork
+    autorestart : true
+    restart_delay : 30000
+    log_date_format : YYYY-MM-DD HH:mm Z
