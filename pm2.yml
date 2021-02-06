@@ -4,7 +4,7 @@ apps:
     interpreter: none
     cwd: ./
     exec_mode: fork
-    args : -jar ./tika-server.jar -c ./tika_config.xml
+    args : -Xmx2000m -jar ./tika-server.jar -c ./tika_config.xml
     autorestart : true
     restart_delay : 500
     log_date_format : YYYY-MM-DD HH:mm Z
